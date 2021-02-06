@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#menu-bar {
+  cursor: pointer;
+  border: none;
+  z-index: 9;
+}
+
+#menu-bar #menu {
+  width: 25px;
+  height: 100%;
+}
+
+#menu-bar #menu .bar {
+  background-color: #000000;
+  width: 100%;
+  height: 2px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+#menu-bar #menu #bar1 {
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+}
+
+#menu-bar #menu #bar3 {
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+}
+
+#menu-bar .change #bar1 {
+  -webkit-transform: translateY(4px) rotateZ(-45deg) !important;
+          transform: translateY(4px) rotateZ(-45deg) !important;
+  background-color: #000000;
+}
+
+#menu-bar .change #bar2 {
+  display: none;
+}
+
+#menu-bar .change #bar3 {
+  -webkit-transform: translateY(2px) rotateZ(45deg) !important;
+          transform: translateY(2px) rotateZ(45deg) !important;
+  background-color: #000000;
+}
+
+.navbar {
+  margin-top: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  -webkit-box-shadow: 1px 1px #ccc;
+          box-shadow: 1px 1px #ccc;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+  border-bottom: 2px solid transparent;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  border-bottom: 2px solid;
+}
+
+.navbar .navbar-nav .nav-item .active {
+  border-bottom: 2px solid;
+}
+
+@media screen and (max-width: 991px) {
+  .navbar #custom-menu {
+    background-color: #ffffff;
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 100vh;
+    left: 0;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+  }
+  .navbar #custom-menu .navbar-nav {
+    margin-top: 50px;
+    margin-left: 10% !important;
+    margin-right: 10% !important;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+  }
+  .navbar #custom-menu .navbar-nav .nav-item {
+    z-index: 10;
+  }
+  .navbar #custom-menu .navbar-nav .nav-item .nav-link {
+    color: #000000 !important;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+  }
+  .navbar .change {
+    display: block !important;
+  }
+  .navbar #custom-menu__bg {
+    width: 0px;
+    height: 0px;
+    position: absolute;
+  }
+}
+
+#main__banner {
+  top: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#main__banner .container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main__banner .container .row .col-lg-6 h2 {
+  font-size: calc(1.325rem + 1.5vw);
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+#main__banner .container .row .col-lg-6 .btn-primary {
+  font-size: 14px;
+  -webkit-transition: all ease-in-out 0.5;
+  transition: all ease-in-out 0.5;
+  background: linear-gradient(45deg, #0d6efd, #0042a5) !important;
+  color: #ffffff;
+  border: 0px;
+}
+
+#main__banner .container .row .col-lg-6 .btn-primary:hover {
+  border: 0px;
+  background: linear-gradient(235deg, #0d6efd, #0042a5) !important;
+  color: #ffffff;
+}
+
+#main__banner .container .row .col-lg-6 img {
+  margin-top: 80px;
+  width: 100%;
+}
+
+/*********************
+ABOUT ME
+********************/
+#about-me {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+#about-me .container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#about-me .container .row .col-lg-6 #about-me__photo {
+  background-color: blanchedalmond;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+/*# sourceMappingURL=custom__styles.css.map */
